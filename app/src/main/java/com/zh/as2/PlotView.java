@@ -91,10 +91,10 @@ public class PlotView extends View {
         Paint axis = new Paint();
         axis.setColor(Color.GRAY);
         canvas.drawLine(0,y-10,x,y-10,axis); //draw x axis
-        //label x axis
+        canvas.drawText("X (time)", x/2, y-5, axis); //label x axis
         //draw horizontal gridlines
         canvas.drawLine(0,y,0,0,axis); //draw y axis
-        //label y axis
+        canvas.drawText("Y", 5, y/2, axis); //label y axis
         //draw vertical gridlines
     }
 }
